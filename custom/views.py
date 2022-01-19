@@ -5,3 +5,6 @@ from custom import signals
 def home(request):
 	signals.notification.send(sender=None,request=request,user=['Python','Django'])
 	return HttpResponse("This is Home Page")
+
+def index(request):
+	return HttpResponse("This is the Index Page")
